@@ -1,0 +1,12 @@
+CONFIG_IDF_TARGET="esp32s31"
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+
+# Console on UART0 (the external bridge), so the board can be reset and flashed
+# through USB-Serial/JTAG while a capture is held open on the other port.
+CONFIG_ESP_CONSOLE_UART_DEFAULT=y
+
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
+
+# ESP-IDF v6.1 leaves the S31's PMP empty and v6.1.1 programs a locked layout.
+# The probe works with either: it installs a temporary grant only if it is empty.
+CONFIG_ESP_SYSTEM_MEMPROT=y

@@ -1,0 +1,8 @@
+# User code gets whole pages of its own, so that mapping it into a user address
+# space exposes nothing else from the kernel image.  vm.c refuses to boot if
+# either symbol is not page-aligned.
+[mapping:user_text]
+archive: libmain.a
+entries:
+    user_main (noflash);
+        text -> iram0_text KEEP() ALIGN(4096, pre, post) SURROUND(user_text)

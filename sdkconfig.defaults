@@ -1,0 +1,15 @@
+CONFIG_IDF_TARGET="esp32s31"
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+
+# Console on UART0 (the external bridge), so the board can be reset and flashed
+# through USB-Serial/JTAG while a capture is held open on the other port.
+CONFIG_ESP_CONSOLE_UART_DEFAULT=y
+
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
+
+# Left ON, unlike the ESP32-P4 sample.  Users are confined by Sv32 page tables,
+# so ESP-IDF's locked PMP layout can stay and keep protecting the kernel itself.
+# Turning region protection off here would also lose the PMA entries that make
+# flash, PSRAM and ROM cacheable on the S31.
+CONFIG_BOOTLOADER_REGION_PROTECTION_ENABLE=y
+CONFIG_ESP_SYSTEM_MEMPROT=y
