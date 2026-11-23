@@ -1,7 +1,7 @@
 /*
  * user_main.c -- the user application.  Runs in U-mode, in its own address space.
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  *
  * This code executes at U_TEXT_VA, not at the address it was linked at, and that
  * page holds nothing but this file.  So:

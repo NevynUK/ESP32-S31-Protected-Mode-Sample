@@ -1,7 +1,7 @@
 /*
  * vm.h -- per-user Sv32 address spaces.
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  */
 
 #pragma once

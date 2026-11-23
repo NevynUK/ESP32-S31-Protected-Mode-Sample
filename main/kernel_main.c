@@ -1,7 +1,7 @@
 /*
  * kernel_main.c -- the M-mode kernel.
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  *
  * ESP-IDF and FreeRTOS run in machine mode as usual.  Each user application runs
  * in user mode in its own Sv32 address space, hosted by a FreeRTOS task: the task

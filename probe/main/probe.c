@@ -2,7 +2,7 @@
  * probe.c -- what privilege and memory protection does this ESP32-S31 really
  * implement?
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  *
  * The preliminary datasheet claims Machine, Supervisor and User modes, Sv32
  * page tables and up to 32 PMP regions.  ESP-IDF uses none of the first three

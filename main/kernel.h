@@ -1,7 +1,7 @@
 /*
  * kernel.h -- state shared between the kernel and its isolation test.
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  */
 
 #pragma once

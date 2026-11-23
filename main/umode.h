@@ -1,7 +1,7 @@
 /*
  * umode.h -- the kernel's interface to the U-mode window.
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  *
  * The context block is shared with umode.S, so its offsets are spelled out here
  * and checked against the struct with _Static_asserts in kernel_main.c.

@@ -1,7 +1,7 @@
 /*
  * probe_stubs.S -- enter a privilege mode, run one stub, come back on its trap.
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  *
  * priv_call() masks interrupts, installs a private trap vector and mrets into
  * the requested mode.  Every stub ends in a trap (normally ecall), and the

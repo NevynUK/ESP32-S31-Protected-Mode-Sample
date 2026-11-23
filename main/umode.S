@@ -1,7 +1,7 @@
 /*
  * umode.S -- the M-mode side of the U-mode window.
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  *
  * umode_enter() is an ordinary C call from a FreeRTOS task.  It parks the
  * kernel's state, switches to the context's address space and mrets to U-mode.

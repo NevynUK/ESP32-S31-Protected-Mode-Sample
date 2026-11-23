@@ -1,7 +1,7 @@
 /*
  * isolation_test.c -- attack the isolation from user mode, on every core.
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  *
  * Each check runs one deliberately bad action in a real U-mode window and
  * compares what the hardware did with what isolation requires.  The kernel will

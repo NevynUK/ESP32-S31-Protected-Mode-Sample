@@ -1,7 +1,7 @@
 /*
  * vm.c -- per-user Sv32 address spaces.
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  *
  * Every user sees the same small layout at the same virtual addresses, backed by
  * its own physical pages:

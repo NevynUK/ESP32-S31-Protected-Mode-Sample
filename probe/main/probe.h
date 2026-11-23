@@ -1,7 +1,7 @@
 /*
  * probe.h -- the interface between the C test sequence and the privilege stubs.
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  */
 
 #pragma once

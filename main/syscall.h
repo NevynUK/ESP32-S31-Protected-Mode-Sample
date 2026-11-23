@@ -1,7 +1,7 @@
 /*
  * syscall.h -- the kernel/user ABI.
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  *
  *   a7      syscall number
  *   a0..a1  arguments
